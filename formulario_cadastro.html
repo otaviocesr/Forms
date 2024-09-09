@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="padding-left: 100px">
+    <form action="/roles" method="get">
+      <h2>Formulário de Cadastro</h2>
+
+      <br />
+
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" />
+
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+
+        <br />
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required />
+
+        <br />
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" name="phone" id="phone" />
+
+        <br />
+
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" name="nascimento" id="nascimento" />
+
+        <br />
+
+        <label for="sexo">Sexo:</label>
+        <select name="sexo" id="sexo">
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Localização</legend>
+        <label for="cidade">Cidade:</label>
+
+        <br />
+
+        <input type="radio" name="cidade" id="cidade" required />
+        <label for="cidade">Nova Odessa</label>
+        <input type="radio" name="cidade" id="cidade" required />
+        <label for="cidade">Sumaré</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Interesses</legend>
+        <label for="interesse">Selecione seus interesses:</label>
+        <input type="checkbox" name="interesse" id="interesse" />
+        <label for="interesse">Tecnologia</label>
+        <input type="checkbox" name="interesse" id="interesse" />
+        <label for="interesse">Esportes</label>
+        <input type="checkbox" name="interesse" id="interesse" />
+        <label for="interesse">Música</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mensagem</legend>
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"> </textarea>
+      </fieldset>
+      <input type="submit" name="enviar" id="enviar" />
+    </form>
+  </body>
+</html>
